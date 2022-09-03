@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Image from 'next/image';
 import { MagnifyingGlassIcon, MicrophoneIcon } from '@heroicons/react/20/solid';
+import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div>
@@ -37,6 +38,7 @@ export default function Home() {
       </form>
 
       {/* footer */}
+      <Footer />
     </div>
   );
 }
