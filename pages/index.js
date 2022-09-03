@@ -12,7 +12,7 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* body */}
-
+      <div>this is the main page</div>
       {/* footer */}
     </div>
   );
