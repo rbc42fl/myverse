@@ -14,7 +14,7 @@ export default function signin({ providers }) {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
               alt="google-logo"
             />
-            <p className="text-sm italic my-10 text-center">
+            <p className="text-sm italic my-5 text-center">
               This website is created for learning purposes
             </p>
             <button
