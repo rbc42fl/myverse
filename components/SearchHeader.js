@@ -2,20 +2,22 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import User from './User';
+import SearchHeaderOptions from './SearchHeaderOptions';
 import {
   MagnifyingGlassIcon,
   MicrophoneIcon,
   XMarkIcon,
-} from '@heroicons/react/20/solid';
+} from '@heroicons/react/24/solid';
 
 export default function SearchHeader() {
   const router = useRouter();
   const searchInputRef = useRef(null);
+
   function search(event) {
     event.preventDefault();
     const term = searchInputRef.current.value;
     if (!term.trim()) return;
-    router.push(`/search?term=${term.trim()}`);
+    router.push(`/search?term=${term.trim()}&searchType=`);
   }
   return (
     <header className="sticky top-0 bg-white">
@@ -54,6 +56,7 @@ export default function SearchHeader() {
 
         <User className="ml-auto whitespace-nowrap" />
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 }
