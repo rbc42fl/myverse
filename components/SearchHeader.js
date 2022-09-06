@@ -22,7 +22,15 @@ export default function SearchHeader() {
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
-        <Image
+        <div className="page_title">
+          <h1
+            onClick={() => router.push('/')}
+            className="text-base text-blue-800 font-bold cursor-pointer"
+          >
+            The Man Of God
+          </h1>
+        </div>
+        {/* <Image
           onClick={() => router.push('/')}
           width="120"
           objectFit="contain"
@@ -30,7 +38,7 @@ export default function SearchHeader() {
           className="cursor-pointer"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
           alt="google-logo"
-        />
+        /> */}
 
         <form
           className="flex border border-gray-200 rounded-full
