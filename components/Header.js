@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import User from './User';
-import Example from './Tooltip';
+
 export default function Header() {
   const router = useRouter();
 

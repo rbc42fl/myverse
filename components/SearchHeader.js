@@ -24,7 +24,7 @@ export default function SearchHeader() {
     <div>
       <header className=" flex w-full p-6 items-center sticky top-0 bg-white">
         <div className="  ">
-          <div className=" flex w-full justify-between page_title border border-red-500">
+          <div className=" flex w-full justify-between page_title ">
             <h1
               onClick={() => router.push('/')}
               className=" text-xs md:text-base text-blue-800 font-bold cursor-pointer hover:text-blue-500 hover:underline "
