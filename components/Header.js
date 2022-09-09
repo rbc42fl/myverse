@@ -1,22 +1,38 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import User from './User';
-
+import Example from './Tooltip';
 export default function Header() {
   const router = useRouter();
+
   return (
     <header className="flex justify-between  p-5 text-sm text-gray-700">
       <div className="flex space-x-4 item-center">
-        <Link href="https://about.google/">
-          <a className="link">About</a>
+        <h1
+          onClick={() => router.push('/')}
+          className=" pt-2 text-sm  text-blue-800 font-bold relative hidden sm:inline-grid"
+        >
+          The Word
+        </h1>
+
+        <Link href="https://mensdiscipleshipnetwork.com/">
+          <a className="pt-2 text-xs md:text-sm link  hover:text-blue-500 hover:translate-x-1">
+            MDN
+          </a>
         </Link>
-        <Link href="https://store.google.com/">
-          <a className="link">Store</a>
+
+        <Link href="https://everymanawarrior.com/">
+          <a className=" pt-2 text-xs md:text-sm link hover:text-blue-500 hover:translate-x-1 ">
+            EMAW
+          </a>
         </Link>
       </div>
+
       <div className="flex space-x-4 items-center">
         <Link href="https://mail.google.com">
-          <a className="link">Gmail</a>
+          <a className="link text-xs md:text-sm hover:text-blue-500 hover:translate-x-1">
+            Gmail
+          </a>
         </Link>
         <a
           onClick={() =>
@@ -24,7 +40,7 @@ export default function Header() {
               `/search?term=${router.query.term || 'google'}&searchType=image`
             )
           }
-          className="link"
+          className="link text-xs md:text-sm hover:text-blue-500 hover:translate-x-1"
         >
           Images
         </a>

@@ -36,23 +36,34 @@ export default function Home() {
 
       <form className="flex flex-col items-center mt-40">
         <div className="page_title">
-          <h1 className="text-6xl text-blue-800 font-bold">The Man Of God</h1>
+          <h1
+            onClick={() => router.push('/')}
+            className=" text-2xl sm:text-5xl text-blue-800 font-bold mb-6"
+          >
+            The Word Of God
+          </h1>
         </div>
-        {/* <Image
-          width="300"
+        <Image
+          width="250"
           objectFit="cover"
           height="100"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
-          alt="google-logo"
-        /> */}
-        <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl">
+          src="/../public/images/Helmet-of-Salvation.jpg"
+          alt="helmet of salvation"
+          className="rounded-full 
+          "
+        />
+        <p>Enter Your Verse Below</p>
+
+        <div className="flex w-full mt-5 mx-auto max-w-[90%] bg-gray-50 border border-gray-300 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl">
           <MagnifyingGlassIcon className="h-5 text-gray-500 mr-3" />
+
           <input
             ref={searchInputRef}
             type="text"
             className="flex-grow focus:outline-none"
           />
-          <MicrophoneIcon className="h-5" />
+
+          {/* <MicrophoneIcon className="h-5" /> */}
         </div>
         <div
           className="flex flex-col sm:flex-row w-[50%]
@@ -61,9 +72,9 @@ export default function Home() {
           <button onClick={search} className="btn">
             Verse Search
           </button>
-          <button onClick={randomSearch} className="btn">
+          {/* <button onClick={randomSearch} className="btn">
             I&apos;m feeling lucky
-          </button>
+          </button> */}
         </div>
       </form>
 
