@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { MagnifyingGlassIcon, MicrophoneIcon } from '@heroicons/react/20/solid';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/router';
@@ -43,7 +43,7 @@ export default function Home() {
             The Word Of God
           </h1>
         </div>
-        <Image
+        {/* <Image
           width="250"
           objectFit="cover"
           height="100"
@@ -51,7 +51,7 @@ export default function Home() {
           alt="helmet of salvation"
           className="rounded-full 
           "
-        />
+        /> */}
         <p>Enter Your Verse Below</p>
 
         <div className="flex w-full mt-5 mx-auto max-w-[90%] bg-gray-50 border border-gray-300 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl">

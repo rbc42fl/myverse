@@ -10,9 +10,9 @@ export default function Search({ results }) {
   const router = useRouter();
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>{router.query.term} - Search Page</title>
-      </Head>
+      </Head> */}
 
       {/* Search Header */}
 
